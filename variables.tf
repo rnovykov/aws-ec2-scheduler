@@ -63,3 +63,13 @@ variable "resource_name_prefix" {
   default     = ""
   description = "a prefix to apply to resource names created by this module."
 }
+
+variable "lambda_handler" {
+  default     = "aws-scheduler.handler"
+  description = "the name of the handler function in your code."
+}
+
+variable "lambda_runtime" {
+  default     = "python3.7"
+  description = "identifier of programing language."
+}
